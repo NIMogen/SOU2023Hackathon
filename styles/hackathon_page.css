@@ -1,10 +1,10 @@
 @font-face {
     font-family: Baskerville;
-    src: url("LibreBaskerville-Regular.ttf")
+    src: url("../fonts/LibreBaskerville-Regular.ttf")
 }
 
 body {
-    background-image: url("foliage.jpg");
+    background-image: url("../images/foliage.jpg");
     background-repear: repeat;
     font-family: Baskerville, Helvetica, sans-serif;
 }
