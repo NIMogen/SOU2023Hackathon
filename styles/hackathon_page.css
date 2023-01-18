@@ -6,6 +6,15 @@
     font-family: HamletOrNot;
     src: url("../fonts/hamletornot-font/Hamletornot-K7y7.ttf");
 }
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
 
 @keyframes fadein {
     0% {opacity: 0;}
@@ -16,7 +25,7 @@ body {
     /* background-image: url("../images/tap1.png"); */
     background: url("../images/tap1.png") fixed;
     background-repeat: repeat;
-    font-family: Baskerville, Helvetica, sans-serif;
+    font-family: Roboto;
 }
 
 .topdiv {
@@ -48,6 +57,12 @@ body {
 
 h1, h2 {
     font-family: HamletOrNot;
+}
+
+h3 {
+    font-family: RobotoBold;
+    font-size: 12pt;
+    font-style: italic;
 }
 
 p, ul li {
