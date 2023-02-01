@@ -74,6 +74,18 @@ ul li {
    margin-bottom: 6pt;
 }
 
+#gold img, #silver img, #bronze img {
+    border: solid black 1px;
+}
+
+#gold img {
+    width: 75%;
+}
+
+#silver img {
+    width: 25%;
+}
+
 @media screen and (max-width: 480px) {
     .topdiv {
         width: 90%;
