@@ -26,6 +26,7 @@ body {
     background: url("../images/tap1.png") fixed;
     background-repeat: repeat;
     font-family: Roboto;
+    text-align: center;
 }
 
 .topdiv {
@@ -52,6 +53,7 @@ body {
 .bodydiv {
     padding-right: 1.5em;
     padding-left: 1.5em;
+    padding-bottom: 1.5em;
     min-height: 100vh;
 }
 
@@ -60,9 +62,8 @@ h1, h2 {
 }
 
 h3 {
-    font-family: RobotoBold;
+    font-family: HamletOrNot;
     font-size: 12pt;
-    font-style: italic;
 }
 
 p, ul li {
@@ -74,16 +75,39 @@ ul li {
    margin-bottom: 6pt;
 }
 
-#gold img, #silver img, #bronze img {
-    border: solid black 1px;
+/* Sponsor Logo Styles */
+
+.gold img, .silver img, .bronze img {
+    /* border: solid 1pt black; */ /* uncomment to test alignment */
+    width: auto;
+    height: 75px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    border: solid 5px;
+    background-color: white;
 }
 
-#gold img {
-    width: 75%;
+.gold img {
+    border-color: gold;
 }
 
-#silver img {
-    width: 25%;
+.silver img {
+    border-color: silver;
+}
+
+.bronze img {
+    border-color: #cd7f32;
+}
+
+@media screen and (max-width: 720px) {
+    .topdiv {
+        width: 90%;
+    }
+    
+    .gold img, .silver img, .bronze img {
+        height: 10vw;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
