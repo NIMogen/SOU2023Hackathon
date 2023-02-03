@@ -2,6 +2,19 @@
     font-family: Baskerville;
     src: url("../fonts/LibreBaskerville-Regular.ttf")
 }
+@font-face {
+    font-family: HamletOrNot;
+    src: url("../fonts/hamletornot-font/Hamletornot-K7y7.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
 
 @keyframes fadein {
     0% {opacity: 0;}
@@ -9,10 +22,11 @@
 }
 
 body {
-    //background-image: url("../images/tap1.png");
+    /* background-image: url("../images/tap1.png"); */
     background: url("../images/tap1.png") fixed;
     background-repeat: repeat;
-    font-family: Baskerville, Helvetica, sans-serif;
+    font-family: Roboto;
+    text-align: center;
 }
 
 .topdiv {
@@ -21,10 +35,9 @@ body {
    align-content: center;
    margin: auto;
    width: 70%;
-   background-color: #eee8d5;
-   //color: #586e75;
+   background-color: #ebd5b3;
 
-   // lighter shadow box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.75);
+   /* lighter shadow box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.75); */
    box-shadow: 0px 2px 16px 2px black;
    animation: fadein 0.5s;
 }
@@ -32,9 +45,73 @@ body {
 .headerdiv {
     padding: 1em;
 }
+
+.headerdiv header h1 {
+    text-align: center;
+}
+
 .bodydiv {
     padding-right: 1.5em;
     padding-left: 1.5em;
+    padding-bottom: 1.5em;
     min-height: 100vh;
 }
 
+h1, h2 {
+    font-family: HamletOrNot;
+}
+
+h3 {
+    font-family: HamletOrNot;
+    font-size: 12pt;
+}
+
+p, ul li {
+    font-size: 12pt;
+    line-height: 18pt;
+}
+
+ul li {
+   margin-bottom: 6pt;
+}
+
+/* Sponsor Logo Styles */
+
+.gold img, .silver img, .bronze img {
+    /* border: solid 1pt black; */ /* uncomment to test alignment */
+    width: auto;
+    height: 75px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    border: solid 5px;
+    background-color: white;
+}
+
+.gold img {
+    border-color: gold;
+}
+
+.silver img {
+    border-color: silver;
+}
+
+.bronze img {
+    border-color: #cd7f32;
+}
+
+@media screen and (max-width: 720px) {
+    .topdiv {
+        width: 90%;
+    }
+    
+    .gold img, .silver img, .bronze img {
+        height: 10vw;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topdiv {
+        width: 90%;
+    }
+}
