@@ -1,3 +1,3 @@
 - Where to host?
 - Logo outlines
-- alignment
+- Fixing alignment
