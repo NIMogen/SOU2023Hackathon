@@ -22,44 +22,35 @@
 }
 
 body {
-    /* background-image: url("../images/tap1.png"); */
     background: url("../images/tap1.png") fixed;
     background-repeat: repeat;
     font-family: Roboto;
     text-align: center;
 }
 
-.info {
-    text-align: left;
-    margin-left: 20pt;
-    margin-right: 20pt;
-}
-.topdiv {
-   display: flex;
-   flex-direction: column;
-   align-content: center;
-   margin: auto;
-   width: 70%;
-   background-color: #ebd5b3;
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    width: 70vw;
+    background-color: #ebd5b3;
 
-   /* lighter shadow box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.75); */
-   box-shadow: 0px 2px 16px 2px black;
-   animation: fadein 0.5s;
-}
+    box-shadow: 0px 2px 16px 2px black;
+    animation: fadein 0.5s;
 
-.headerdiv {
-    padding: 1em;
-}
-
-.headerdiv header h1 {
-    text-align: center;
-}
-
-.bodydiv {
     padding-right: 1.5em;
     padding-left: 1.5em;
     padding-bottom: 1.5em;
     min-height: 100vh;
+}
+
+header {
+    padding: 1em;
+}
+
+header h1 {
+    text-align: center;
 }
 
 h1, h2 {
@@ -69,6 +60,10 @@ h1, h2 {
 h3 {
     font-family: HamletOrNot;
     font-size: 12pt;
+}
+
+p {
+    text-align: center;
 }
 
 p, ul li {
@@ -105,8 +100,8 @@ ul li {
 }
 
 @media screen and (max-width: 720px) {
-    .topdiv {
-        width: 90%;
+    main {
+        width: calc(90vw - 1.5em);
     }
     
     .gold img, .silver img, .bronze img {
@@ -115,8 +110,6 @@ ul li {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .topdiv {
-        width: 90%;
-    }
-}
+/*
+@media screen and (max-width: 480px) {}
+*/
